@@ -84,6 +84,7 @@ public class TransServer {
     public static void main(String[] args) {
         if(args.length<3){
             System.out.println("参数输入错误,参数格式:本地端口 目标ip 目标端口");
+            return;
         }
 
         new TransServer(Integer.valueOf(args[0]),args[1],Integer.valueOf(args[2])).run();
