@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="29405032-264d-489f-a7f7-dde0ba9823dd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/blue/TransServer.java" afterPath="$PROJECT_DIR$/netty-demo/src/main/java/com/blue/TransServer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/netty-demo/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,20 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="TransServer.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/blue/TransServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="717">
-              <caret line="86" column="19" lean-forward="false" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -188,8 +174,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -251,12 +236,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../distribute" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -403,7 +389,10 @@
       <option name="presentableId" value="Default" />
       <updated>1514949159303</updated>
       <workItem from="1514949162361" duration="9932000" />
-      <workItem from="1514964604662" duration="79000" />
+      <workItem from="1514964604662" duration="345000" />
+      <workItem from="1515042290081" duration="640000" />
+      <workItem from="1516325868574" duration="606000" />
+      <workItem from="1522670308930" duration="78000" />
     </task>
     <task id="LOCAL-00001" summary="添加一个netty-demo项目，这个项目 的主要功能是将收到的数据转发，拆包分隔符以换行符(\n)分隔">
       <created>1514959573106</created>
@@ -412,11 +401,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514959573106</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="增加异常中断机制">
+      <created>1514964755923</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1514964755923</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10011000" />
+    <option name="totallyTimeSpent" value="11601000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -433,7 +429,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26066098" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -460,7 +456,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="添加一个netty-demo项目，这个项目 的主要功能是将收到的数据转发，拆包分隔符以换行符(\n)分隔" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加一个netty-demo项目，这个项目 的主要功能是将收到的数据转发，拆包分隔符以换行符(\n)分隔" />
+    <MESSAGE value="增加异常中断机制" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加异常中断机制" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -469,22 +466,46 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/blue/TransServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1738#2269#0" expanded="true" />
+            <element signature="e#2268#2269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/blue/TransServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1738#2269#0" expanded="true" />
+            <element signature="e#2268#2269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/blue/TransServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1738#2269#0" expanded="true" />
+            <element signature="e#2268#2269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://D:/develop/Java/jdk1.8.0_121/src.zip!/java/lang/Runnable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
           <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/blue/handle/TransServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="51" column="12" lean-forward="false" selection-start-line="51" selection-start-column="12" selection-end-line="52" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -493,35 +514,21 @@
         <state relative-caret-position="114">
           <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1356#1357#0" expanded="true" />
-            <element signature="e#1383#1384#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1356#1357#0" expanded="false" />
+            <element signature="e#1383#1384#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/netty-demo/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/blue/client/TransClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="107" column="17" lean-forward="false" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2082#2436#0" expanded="true" />
-            <element signature="e#2435#2436#0" expanded="true" />
-            <element signature="e#2933#3284#0" expanded="true" />
-            <element signature="e#3283#3284#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -532,12 +539,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/blue/handle/TransServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="41" column="42" lean-forward="true" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/blue/client/TransClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="64" column="36" lean-forward="false" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+          <folding>
+            <element signature="e#2082#2436#0" expanded="true" />
+            <element signature="e#2435#2436#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/blue/TransServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="717">
-          <caret line="86" column="19" lean-forward="false" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
+        <state relative-caret-position="509">
+          <caret line="65" column="77" lean-forward="false" selection-start-line="65" selection-start-column="77" selection-end-line="65" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1738#2269#0" expanded="true" />
+            <element signature="e#2268#2269#0" expanded="true" />
           </folding>
         </state>
       </provider>
