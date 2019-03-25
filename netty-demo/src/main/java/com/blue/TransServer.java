@@ -44,7 +44,7 @@ public class TransServer {
     private String remoteIP;
     private int remotePort;
 
-    public TransServer(int localPort, String remoteIP, int remotePort) {
+    public  TransServer(int localPort, String remoteIP, int remotePort) {
         this.localPort = localPort;
         this.remoteIP = remoteIP;
         this.remotePort = remotePort;
