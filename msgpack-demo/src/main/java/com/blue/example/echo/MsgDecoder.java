@@ -2,7 +2,6 @@ package com.blue.example.echo;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
-import io.netty.handler.codec.ByteToMessageDecoder;
 import io.netty.handler.codec.MessageToMessageDecoder;
 import org.msgpack.MessagePack;
 
@@ -24,7 +23,15 @@ public class MsgDecoder extends MessageToMessageDecoder<ByteBuf> {
     protected void decode(ChannelHandlerContext ctx, ByteBuf in, List<Object> out) throws Exception {
         byte[] src = new byte[in.readableBytes()];
         in.getBytes(in.readerIndex(), src, 0, src.length);
-        out.add(msgpack.read(src));
+//        out.add(msgpack.read(src));
+
+        org.msgpack.type.ArrayValue msg = (org.msgpack.type.ArrayValue) msgpack.read(src);
+        org.msgpack.type.Value[] values = msg.getElementArray();
+        UserInfo info = new UserInfo();
+        info.setName(values[0].asRawValue().getString());
+        info.setAge(values[1].asIntegerValue().getInt());
+
+        out.add(info);
     }
 
 }

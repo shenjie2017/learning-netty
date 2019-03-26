@@ -25,16 +25,18 @@ public class EchoClient {
         EventLoopGroup group = new NioEventLoopGroup();
         try {
             Bootstrap b = new Bootstrap();
-            b.group(group).channel(NioSocketChannel.class).option(ChannelOption.TCP_NODELAY, true)
+            b.group(group).channel(NioSocketChannel.class)
+                    .option(ChannelOption.TCP_NODELAY, true)
+                    .option(ChannelOption.CONNECT_TIMEOUT_MILLIS, 3000)
                     .handler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
                             ch.pipeline()
-//                                    .addLast("frame decoder", new LengthFieldBasedFrameDecoder(65535, 0, 2, 0, 2))
-//                                    .addLast("MessagePack decoder", new MsgDecoder())
-//                                    .addLast("frame encoder", new LengthFieldPrepender(2))
-//                                    .addLast("MessagePack encoder", new MsgEncoder())
-                                    .addLast("client handler", new EchoClientHandler());
+                                    .addLast("frame decoder", new LengthFieldBasedFrameDecoder(1024, 0, 2, 0, 2))
+                                    .addLast("MessagePack decoder", new MsgDecoder())
+                                    .addLast("frame encoder", new LengthFieldPrepender(2))
+                                    .addLast("MessagePack encoder", new MsgEncoder())
+                                    .addLast( "client handler",new EchoClientHandler());
                         }
                     });
 

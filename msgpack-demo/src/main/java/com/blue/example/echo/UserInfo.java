@@ -1,5 +1,7 @@
 package com.blue.example.echo;
 
+import org.msgpack.annotation.Message;
+
 import java.io.Serializable;
 
 /**
@@ -11,11 +13,15 @@ import java.io.Serializable;
  * @Package: com.blue.example.echo
  * @Description:
  */
+@Message
 public class UserInfo implements Serializable {
-    private static final long serialVersionUID = -3506813170754191990L;
+    private static final long serialVersionUID = 1;
 
     private String name;
-    private int age;
+    private Integer age;
+
+    public UserInfo() {
+    }
 
     public UserInfo buildName(String name) {
         this.name = name;
@@ -35,7 +41,7 @@ public class UserInfo implements Serializable {
         this.name = name;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 

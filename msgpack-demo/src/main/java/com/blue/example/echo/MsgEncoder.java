@@ -14,11 +14,12 @@ import org.msgpack.MessagePack;
  * @Package: com.blue.example.echo
  * @Description:
  */
-public class MsgEncoder extends MessageToByteEncoder<Object> {
+public class MsgEncoder extends MessageToByteEncoder {
     private MessagePack msgpack = new MessagePack();
 
     @Override
     protected void encode(ChannelHandlerContext ctx, Object msg, ByteBuf out) throws Exception {
         out.writeBytes(msgpack.write(msg));
     }
+
 }

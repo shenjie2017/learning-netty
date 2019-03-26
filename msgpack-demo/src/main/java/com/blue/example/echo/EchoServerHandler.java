@@ -1,8 +1,6 @@
 package com.blue.example.echo;
 
 
-import io.netty.buffer.ByteBuf;
-import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
@@ -20,6 +18,11 @@ import java.util.logging.Logger;
 public class EchoServerHandler extends ChannelInboundHandlerAdapter {
     private static Logger logger = Logger.getLogger(EchoServerHandler.class.getName());
     private int counter = 0;
+
+    @Override
+    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        super.channelActive(ctx);
+    }
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {

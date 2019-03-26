@@ -36,7 +36,6 @@ public class EchoClientHandler extends ChannelInboundHandlerAdapter {
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         for (UserInfo info : getUserInfos(100)) {
             logger.info("client send data:" + info.toString());
-//            ctx.writeAndFlush(info);
             ctx.write(info);
         }
         ctx.flush();
@@ -45,7 +44,11 @@ public class EchoClientHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         logger.info("counter:" + ++counter + " client receive:" + msg);
-        ctx.write(msg);
+    }
+
+    @Override
+    public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
+        ctx.flush();
     }
 
     @Override
